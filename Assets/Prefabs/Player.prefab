@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fSpeed: 0.25
-  fJumpStrength: 1728
+  fJumpStrength: 450
   fFallSpeed: 2.5
 --- !u!114 &114364764434001970
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e8e5c369b97a64f9ad6dd531fccfac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fMaxFall: 108
+  fMaxFall: 60
 --- !u!120 &120626218911910812
 LineRenderer:
   m_ObjectHideFlags: 1
