@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 152de07b331224947a0e676cac4d2378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fSpeed: 0.2
+  fSpeed: 0.25
   fJumpStrength: 450
   fFallSpeed: 2.5
 --- !u!114 &114364764434001970
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331caab395b68d94cbd52dc8ebc035c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fPlaceDistance: 12
+  fPlaceDistance: 8
   goPlatform: {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047, type: 2}
 --- !u!120 &120626218911910812
 LineRenderer:
@@ -211,7 +211,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: -0, y: -0.4, z: 0}
-  - {x: 0, y: -0.4, z: 12}
+  - {x: 0, y: -0.4, z: 8}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.2
