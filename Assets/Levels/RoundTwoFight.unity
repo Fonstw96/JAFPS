@@ -210,16 +210,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114705764220328928, guid: 704c120394b334242a4461e87ace421a,
-        type: 2}
-      propertyPath: goPlacer
-      value: 
-      objectReference: {fileID: 1931856817}
     - target: {fileID: 114389015760769212, guid: 704c120394b334242a4461e87ace421a,
         type: 2}
       propertyPath: goPlayer
       value: 
       objectReference: {fileID: 1553748972}
+    - target: {fileID: 114705764220328928, guid: 704c120394b334242a4461e87ace421a,
+        type: 2}
+      propertyPath: goPlacer
+      value: 
+      objectReference: {fileID: 1931856817}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 704c120394b334242a4461e87ace421a, type: 2}
   m_IsPrefabParent: 0

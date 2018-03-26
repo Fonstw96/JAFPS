@@ -28,4 +28,10 @@ public class UIProgress : MonoBehaviour
 
         UpdateProgress();
     }
+
+    // I hate getters&setters, this just happens to be a workaround >:-(
+    public int GetProgress()
+    {
+        return iProgress;
+    }
 }
