@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 136746957215467564}
   - component: {fileID: 114351492261702904}
   - component: {fileID: 54575931968521568}
+  - component: {fileID: 114539707259089892}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -160,7 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fSpeed: 0.25
-  fJumpStrength: 450
+  fJumpStrength: 1728
   fFallSpeed: 2.5
 --- !u!114 &114364764434001970
 MonoBehaviour:
@@ -175,6 +176,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fPlaceDistance: 8
   goPlatform: {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047, type: 2}
+--- !u!114 &114539707259089892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317863333057066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e8e5c369b97a64f9ad6dd531fccfac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fMaxFall: 108
 --- !u!120 &120626218911910812
 LineRenderer:
   m_ObjectHideFlags: 1
