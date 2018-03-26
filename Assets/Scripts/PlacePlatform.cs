@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlacePlatform : MonoBehaviour
 {
     public float fPlaceDistance = 12;
+    public GameObject goPlatform;
 
 	void Start ()
     {
@@ -12,5 +13,7 @@ public class PlacePlatform : MonoBehaviour
 	
 	void Update ()
     {
+        if (Input.GetButtonDown("Fire1"))
+            Instantiate(goPlatform, transform.position + transform.forward * fPlaceDistance, new Quaternion());
 	}
 }

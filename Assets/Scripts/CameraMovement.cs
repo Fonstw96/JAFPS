@@ -12,7 +12,8 @@ public class CameraMovement : MonoBehaviour
 
     void Start ()
     {
-	}
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
 	void Update ()
     {
@@ -27,6 +28,14 @@ public class CameraMovement : MonoBehaviour
         // For readability
         vMouseRotation.x -= Input.GetAxis("Mouse Y") * fMouseSensitivity;
         vPlayerRotation.y += Input.GetAxis("Mouse X") * fMouseSensitivity;
+
+        // For bug prevention
+        vMouseRotation.z = 0;
+
+        //if (vMouseRotation.x < -90)
+        //    vMouseRotation.x = 90;
+        //else if (vMouseRotation.x > 90)
+        //    vMouseRotation.x = -90;
 
         // Actual rotation
         transform.rotation = Quaternion.Euler(vMouseRotation);
