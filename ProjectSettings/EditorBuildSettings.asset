@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Levels/myFirstLevel.unity
+    guid: d84c9199b3d1ab249b313c4ed031cfbd
+  - enabled: 1
+    path: Assets/Levels/RoundTwoFight.unity
+    guid: 7e31f565133fbf343b3ad78998fc6917
