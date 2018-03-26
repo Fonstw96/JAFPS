@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114351492261702904}
   - component: {fileID: 54575931968521568}
   - component: {fileID: 114539707259089892}
+  - component: {fileID: 114170660544877314}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -136,6 +137,20 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1866981657035332}
   m_Enabled: 1
+--- !u!114 &114170660544877314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317863333057066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e84393e6be6e4448784c36aac000a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iMaxHP: 2
+  fCurHP: 0
+  fRegenDelay: 3
 --- !u!114 &114206337932702836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,6 +191,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fPlaceDistance: 8
   goPlatform: {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047, type: 2}
+  iAmmo: 0400000000000000000000000000000000000000
+  iCurAmmo: 0
 --- !u!114 &114539707259089892
 MonoBehaviour:
   m_ObjectHideFlags: 1

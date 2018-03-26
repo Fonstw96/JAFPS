@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public int iMaxHP = 2;
-    private float fCurHP = 0;
+    public float fCurHP = 0;
     private float fRegenTimer = 0;
     public float fRegenDelay = 3;
 
@@ -21,10 +21,10 @@ public class PlayerHealth : MonoBehaviour
 
     void Update()
     {
-        if (fCurHP <= 0)
+        if (fCurHP < 1)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         else if (fCurHP < iMaxHP && fRegenTimer <= Time.time)
-            fCurHP += Time.deltaTime;
+            fCurHP += Time.deltaTime / fRegenDelay;
     }
 
     public void ChangeHP(int iModifier)
