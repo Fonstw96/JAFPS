@@ -29,14 +29,6 @@ public class CameraMovement : MonoBehaviour
         vMouseRotation.x -= Input.GetAxis("Mouse Y") * fMouseSensitivity;
         vPlayerRotation.y += Input.GetAxis("Mouse X") * fMouseSensitivity;
 
-        // For bug prevention
-        vMouseRotation.z = 0;
-
-        //if (vMouseRotation.x < -90)
-        //    vMouseRotation.x = 90;
-        //else if (vMouseRotation.x > 90)
-        //    vMouseRotation.x = -90;
-
         // Actual rotation
         transform.rotation = Quaternion.Euler(vMouseRotation);
         tPlayer.rotation = Quaternion.Euler(vPlayerRotation);
