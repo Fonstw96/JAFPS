@@ -10,8 +10,8 @@ public class EnemyFollow : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            transform.LookAt(other.transform);
-            transform.position += transform.forward * fMovementSpeed;
+            transform.LookAt(new Vector3(other.transform.position.x, transform.position.y, other.transform.position.z));
+            transform.position += transform.forward * fMovementSpeed * Time.deltaTime;
         }
     }
 

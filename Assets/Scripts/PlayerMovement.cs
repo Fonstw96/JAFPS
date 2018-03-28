@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 	public float fSpeed = .2f;
     public float fJumpStrength = 400;
-    public float fFallSpeed = 2.5f;
+    public float fFallSpeed = 1.5f;
 
     private Rigidbody rb;
 
@@ -23,28 +23,26 @@ public class PlayerMovement : MonoBehaviour
 
 	void Walk()
 	{
-        // For readability
+		// For readability
 		Vector3 vForward = transform.forward * Input.GetAxis("Vertical") * fSpeed;
 		Vector3 vSideways = transform.right * Input.GetAxis("Horizontal") * fSpeed;
-		//print("F: " + vForward + ", S: " + vSideways);
 
-        // Actual movement
-		transform.position += vForward;
-		transform.position += vSideways;
+		// Actually moving
+		transform.position += vForward * Time.deltaTime;
+		transform.position += vSideways * Time.deltaTime;
 	}
 
     void SmoothJump()
     {
-        // For readability
+        // Just in case
         Vector3 vJump = transform.up * 0;
 
         if (Input.GetButtonDown("Jump"))
             vJump = transform.up * fJumpStrength;
 
-        // Actual jump
         rb.AddForce(vJump);
 
-        // Faster fall
-        rb.velocity += Vector3.up * Physics.gravity.y * (fFallSpeed - 1) * Time.deltaTime;
+        // Smoother fall
+        rb.velocity += Vector3.up * Physics.gravity.y * fFallSpeed * Time.deltaTime;
     }
 }

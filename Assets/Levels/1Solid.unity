@@ -1199,6 +1199,10 @@ Prefab:
       propertyPath: goPlacer
       value: 
       objectReference: {fileID: 679557305}
+    - target: {fileID: 1472414392203198, guid: 704c120394b334242a4461e87ace421a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 704c120394b334242a4461e87ace421a, type: 2}
   m_IsPrefabParent: 0

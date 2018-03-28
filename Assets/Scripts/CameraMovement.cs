@@ -6,7 +6,7 @@ public class CameraMovement : MonoBehaviour
 {
     public float fMouseSensitivity = 1;
     public Transform tPlayer;
-    
+
     private Vector3 vMouseRotation;
     private Vector3 vPlayerRotation;
 
@@ -22,14 +22,14 @@ public class CameraMovement : MonoBehaviour
 
     void Look()
     {
-        // For stability
+        // For camera stability, don't keep jumping back
         vMouseRotation = transform.rotation.eulerAngles;
 
         // For readability
         vMouseRotation.x -= Input.GetAxis("Mouse Y") * fMouseSensitivity;
         vPlayerRotation.y += Input.GetAxis("Mouse X") * fMouseSensitivity;
 
-        // Buf fixing (pls?)
+        // Prevents a nasty byug
         vMouseRotation.x = ClampAngle(vMouseRotation.x, -85, 85);
 
         // Actual rotation
@@ -37,11 +37,7 @@ public class CameraMovement : MonoBehaviour
         tPlayer.rotation = Quaternion.Euler(vPlayerRotation);
     }
 
-    // Jesse from my class made this: 
-
-    /// <summary>
-    /// clamp an angle between to values
-    /// </summary>
+    // Jesse from my class made this:
     public static float ClampAngle(float a, float min, float max)
     {
         while (max < min) max += 360.0f;
