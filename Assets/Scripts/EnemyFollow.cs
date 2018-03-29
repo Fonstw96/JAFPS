@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public enum State {Patrol, Chase };
 
@@ -11,19 +9,21 @@ public class EnemyFollow : MonoBehaviour
     
     private Animator myAnimator;
     private bool bAnimate = true;
+    private AudioSource asBite;
 
     void Start()
     {
         myAnimator = GetComponent<Animator>();
         if (myAnimator == null)
-        {
-            print("Enemy has no animator");
             bAnimate = false;
-        }
 
         csAI = GetComponent<EnemyBehaviour>();
         if (csAI == null)
             print("Enemy has no AI");
+
+        asBite = GetComponent<AudioSource>();
+        if (asBite == null)
+            print("Enemy has no bite sound");
     }
 
     void Update()
@@ -63,6 +63,8 @@ public class EnemyFollow : MonoBehaviour
         {
             if (bAnimate)
                 myAnimator.SetTrigger("Attack");
+
+            asBite.Play();
             collision.gameObject.GetComponent<PlayerHealth>().ChangeHP(-1);
         }
         else if (collision.gameObject.tag == "Wall")

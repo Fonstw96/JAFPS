@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,10 +8,12 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
     private bool bAllowJump = true;
+    private AudioSource asJump;
 
 	void Start ()
 	{
         rb = GetComponent<Rigidbody>();
+        asJump = GetComponent<AudioSource>();
 	}
 
 	void Update ()
@@ -55,7 +55,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 vJump = transform.up * 0;
 
         if (Input.GetButtonDown("Jump") && bAllowJump)
+        {
             vJump = transform.up * fJumpStrength;
+            asJump.Play();
+        }
 
         rb.AddForce(vJump);
 

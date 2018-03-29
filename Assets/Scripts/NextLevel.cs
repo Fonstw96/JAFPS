@@ -7,10 +7,19 @@ public class NextLevel : MonoBehaviour
     public GameObject goUserInterface;
 
     private UIProgress csUserInterface;
+    private AudioSource asPhase;
+    private float fTeleportTimer;
 
-    private void Start()
+    void Start()
     {
         csUserInterface = goUserInterface.GetComponent<UIProgress>();
+        asPhase = GetComponent<AudioSource>();
+    }
+
+    void Update()
+    {
+        if (fTeleportTimer > 0 && fTeleportTimer < Time.time)
+            SceneManager.LoadScene(iNextLevel);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -22,7 +31,8 @@ public class NextLevel : MonoBehaviour
             else
             {
                 csUserInterface.ChangeProgress(iNextLevel);
-                SceneManager.LoadScene(iNextLevel);
+                asPhase.Play();
+                fTeleportTimer = Time.time + .7f;
             }
         }
     }
