@@ -685,7 +685,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4223311109321930, guid: 0fe78ac95f012004a942a02f7fc39bd5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4223311109321930, guid: 0fe78ac95f012004a942a02f7fc39bd5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3999,7 +3999,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4750669913319724, guid: 2d45f9eef3247964a8e3a55a0f5ce37d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4750669913319724, guid: 2d45f9eef3247964a8e3a55a0f5ce37d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4449,7 +4449,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4928187356179754, guid: a0d1c134966e4cb4cb6afe914743fdc7, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
+        type: 2}
+      propertyPath: iAmmo.Array.data[0]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
+        type: 2}
+      propertyPath: iAmmo.Array.data[1]
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0d1c134966e4cb4cb6afe914743fdc7, type: 2}
@@ -5478,7 +5488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &1807112348 stripped
 Transform:

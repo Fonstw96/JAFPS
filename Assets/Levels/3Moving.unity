@@ -481,12 +481,12 @@ Prefab:
     - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
         type: 2}
       propertyPath: iAmmo.Array.data[0]
-      value: 1
+      value: 144
       objectReference: {fileID: 0}
     - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
         type: 2}
       propertyPath: iAmmo.Array.data[1]
-      value: 3
+      value: 144
       objectReference: {fileID: 0}
     - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
         type: 2}

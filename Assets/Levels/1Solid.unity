@@ -2671,6 +2671,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
+        type: 2}
+      propertyPath: iAmmo.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0d1c134966e4cb4cb6afe914743fdc7, type: 2}
   m_IsPrefabParent: 0
@@ -2691,9 +2696,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fMovementSpeed: 10.8
+  clTarget: {fileID: 0}
   fTurnMin: 1.7
   fTurnMax: 4.8
-  clTarget: {fileID: 0}
 --- !u!4 &1963115571 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4223311109321930, guid: 0fe78ac95f012004a942a02f7fc39bd5,
