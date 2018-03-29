@@ -747,6 +747,7 @@ GameObject:
   - component: {fileID: 95257941854978666}
   - component: {fileID: 114051704969595470}
   - component: {fileID: 114691418932162338}
+  - component: {fileID: 114981582734730898}
   m_Layer: 0
   m_Name: Crawler
   m_TagString: Enemy
@@ -1686,9 +1687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b841405a499d2574987226d0426a4f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fMovementSpeed: 10.8
-  fTurnMin: 2.1
-  fTurnMax: 4.2
 --- !u!114 &114691418932162338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1701,6 +1699,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fMaxFall: 48
+--- !u!114 &114981582734730898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1815632657198584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9004b35bdef4a474d8d8de04f144f693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fMovementSpeed: 10.8
+  clTarget: {fileID: 0}
+  fTurnMin: 1.7
+  fTurnMax: 4.8
 --- !u!135 &135946750761708408
 SphereCollider:
   m_ObjectHideFlags: 1
