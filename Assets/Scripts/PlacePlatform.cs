@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlacePlatform : MonoBehaviour
 {
     public float fPlaceDistance = 8;
-    public GameObject goPlatform;
+    public GameObject[] goPlatforms;
     public int[] iAmmo;
 
     private LineRenderer lrLaser;
@@ -48,7 +48,7 @@ public class PlacePlatform : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && iAmmo[iCurAmmo] > 0)
         {
             iAmmo[iCurAmmo] -= 1;
-            Instantiate(goPlatform, transform.position + transform.forward * fPlaceDistance, new Quaternion());
+            Instantiate(goPlatforms[iCurAmmo], transform.position + transform.forward * fPlaceDistance, new Quaternion());
         }
 	}
 }

@@ -190,7 +190,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fPlaceDistance: 8
-  goPlatform: {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047, type: 2}
+  goPlatforms:
+  - {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047, type: 2}
+  - {fileID: 1350862957314464, guid: f89b450d664b70e4db07218f8450a44f, type: 2}
+  - {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047, type: 2}
+  - {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047, type: 2}
+  - {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047, type: 2}
   iAmmo: 0400000000000000000000000000000000000000
   iCurAmmo: 0
 --- !u!114 &114539707259089892

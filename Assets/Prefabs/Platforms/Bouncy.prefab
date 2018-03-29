@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 33132749337629544}
   - component: {fileID: 65200712994698040}
   - component: {fileID: 23817157176847112}
+  - component: {fileID: 114840579447991284}
   m_Layer: 0
-  m_Name: PlatformSpawn
+  m_Name: Bouncy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1350862957314464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.45, y: 0, z: 24.08}
   m_LocalScale: {x: 6, y: 0.25, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 420be213146c3254e85f66694d9f39b3, type: 2}
+  - {fileID: 2100000, guid: 84e3d04c1c7225e4dac302f50bf81068, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,3 +96,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114840579447991284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1350862957314464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184b1ffa74c5b4d40a1889345b27ab7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fBouncePower: 1100

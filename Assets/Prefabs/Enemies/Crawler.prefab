@@ -1627,7 +1627,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &65956106499677724
 BoxCollider:
@@ -1649,8 +1649,8 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1815632657198584}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 6022821a30f1a3c44a65bbe690dff0db, type: 3}
+  m_Controller: {fileID: 9100000, guid: 0aa2f0803bf34764bae361624faa7e9b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1666,17 +1666,13 @@ Animation:
   m_GameObject: {fileID: 1815632657198584}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400002, guid: 130cac6b96af6214296215324b5da188, type: 3}
+  m_Animation: {fileID: 7400014, guid: 130cac6b96af6214296215324b5da188, type: 3}
   m_Animations:
-  - {fileID: 7400002, guid: 130cac6b96af6214296215324b5da188, type: 3}
-  - {fileID: 7400004, guid: 130cac6b96af6214296215324b5da188, type: 3}
-  - {fileID: 7400006, guid: 130cac6b96af6214296215324b5da188, type: 3}
-  - {fileID: 7400008, guid: 130cac6b96af6214296215324b5da188, type: 3}
-  - {fileID: 7400010, guid: 130cac6b96af6214296215324b5da188, type: 3}
-  - {fileID: 7400012, guid: 130cac6b96af6214296215324b5da188, type: 3}
   - {fileID: 7400014, guid: 130cac6b96af6214296215324b5da188, type: 3}
+  - {fileID: 7400012, guid: 130cac6b96af6214296215324b5da188, type: 3}
+  - {fileID: 7400002, guid: 130cac6b96af6214296215324b5da188, type: 3}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
 --- !u!114 &114051704969595470
@@ -1691,6 +1687,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fMovementSpeed: 10.8
+  fTurnMin: 2.1
+  fTurnMax: 4.2
 --- !u!114 &114691418932162338
 MonoBehaviour:
   m_ObjectHideFlags: 1
