@@ -685,7 +685,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4223311109321930, guid: 0fe78ac95f012004a942a02f7fc39bd5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4223311109321930, guid: 0fe78ac95f012004a942a02f7fc39bd5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3999,7 +3999,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4750669913319724, guid: 2d45f9eef3247964a8e3a55a0f5ce37d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4750669913319724, guid: 2d45f9eef3247964a8e3a55a0f5ce37d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4419,11 +4419,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
-        type: 2}
-      propertyPath: goPlatforms.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4928187356179754, guid: a0d1c134966e4cb4cb6afe914743fdc7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4456,50 +4451,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1317863333057066, guid: a0d1c134966e4cb4cb6afe914743fdc7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
-        type: 2}
-      propertyPath: iAmmo.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
-        type: 2}
-      propertyPath: iAmmo.Array.data[1]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
-        type: 2}
-      propertyPath: goPlatforms.Array.data[0]
-      value: 
-      objectReference: {fileID: 1350862957314464, guid: 843cdf964a0158249acc9cf49b368047,
-        type: 2}
-    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
-        type: 2}
-      propertyPath: goPlatforms.Array.data[1]
-      value: 
-      objectReference: {fileID: 1350862957314464, guid: f89b450d664b70e4db07218f8450a44f,
-        type: 2}
-    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
-        type: 2}
-      propertyPath: goPlatforms.Array.data[2]
-      value: 
-      objectReference: {fileID: 1350862957314464, guid: f89b450d664b70e4db07218f8450a44f,
-        type: 2}
-    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
-        type: 2}
-      propertyPath: goPlatforms.Array.data[3]
-      value: 
-      objectReference: {fileID: 1350862957314464, guid: f89b450d664b70e4db07218f8450a44f,
-        type: 2}
-    - target: {fileID: 114364764434001970, guid: a0d1c134966e4cb4cb6afe914743fdc7,
-        type: 2}
-      propertyPath: goPlatforms.Array.data[4]
-      value: 
-      objectReference: {fileID: 1350862957314464, guid: f89b450d664b70e4db07218f8450a44f,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0d1c134966e4cb4cb6afe914743fdc7, type: 2}
   m_IsPrefabParent: 0
