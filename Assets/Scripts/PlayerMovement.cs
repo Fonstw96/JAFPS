@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GameObject other = collision.gameObject;
 
-        if (other.tag == "Surface")
+        if (other.tag != "NoJump")
             bAllowJump = true;
     }
 
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GameObject other = collision.gameObject;
 
-        if (other.tag == "Surface")
+        if (other.tag != "NoJump")
             bAllowJump = false;
     }
 
