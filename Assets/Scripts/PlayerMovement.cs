@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 	public float fSpeed = .2f;
     public float fJumpStrength = 400;
     public float fFallSpeed = 2.5f;
+    public float fJumpHelp = .6f;
 
     private Rigidbody rb;
     private bool bAllowJump = true;
@@ -25,6 +26,10 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         GameObject other = collision.gameObject;
+        float fDifference = other.transform.position.y - transform.position.y;
+
+        if (fDifference > 0 && fDifference < fJumpHelp)
+            transform.position = new Vector3(transform.position.x, other.transform.position.y, transform.position.z);
 
         if (other.tag != "NoJump")
             bAllowJump = true;
